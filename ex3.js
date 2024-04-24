@@ -6,7 +6,7 @@ const express = require("express");
 
 const app = express();
 
-app.use("/r/:anything",(req,res)=>{
+app.get("/r/:anything",(req,res)=>{
    const {anything}=req.params
     res.send(anything)
 })

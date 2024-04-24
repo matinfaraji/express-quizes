@@ -5,7 +5,7 @@ const express = require("express");
 
 const app = express();
 
-app.use("/search",(req,res)=>{
+app.get("/weird",(req,res)=>{
     const{name , title}=req.query
    console.log(name +"  " + title); 
     res.send(name +"  " + title)
